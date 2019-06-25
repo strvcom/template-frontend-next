@@ -19,7 +19,7 @@
   "devDependencies": {
     "@strv/eslint-config-react": "^2.1.1",
     "@strv/eslint-config-typescript": "^1.1.1",
-    "@strv/stylelint-config-styled-components": "^1.0.1",
+    "@strv/stylelint-config-styled-components": "^1.1.0",
     "@types/node": "^12.0.10",
     "@types/react": "^16.8.22",
     "@types/react-dom": "^16.0.11",
