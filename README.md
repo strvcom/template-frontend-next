@@ -13,7 +13,7 @@ git push -f origin master
 ---
 
 ## Documentation
-For details on how to use Next.js, check out the [documentation](https://nextjs.org/).
+For details on how to use `create-react-app`, check out the [documentation](https://facebook.github.io/create-react-app/).
 
 ## Prerequisites
 - `node`
