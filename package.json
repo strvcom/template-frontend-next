@@ -8,7 +8,7 @@
     "start": "next start",
     "type-check": "tsc",
     "lint": "eslint '{pages,src}/**/*.{ts,tsx}'",
-     "lint:css": "stylelint '{pages,src}/**/*.{ts,tsx}'",
+    "lint:css": "stylelint '{pages,src}/**/*.{ts,tsx}'",
     "format": "prettier --write"
   },
   "dependencies": {
