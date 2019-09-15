@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "type-check": "tsc",
-    "lint": "eslint pages src",
+    "lint": "eslint '{pages,src}/**/*.{ts,tsx}'",
     "lint:css": "stylelint pages src",
     "format": "prettier --write"
   },
