@@ -6,35 +6,37 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "type-check": "tsc",
-    "lint": "eslint --ext .ts,.tsx src pages",
-    "lint:css": "stylelint '{pages,src}/**/*.{ts,tsx}'",
-    "format": "prettier --write"
+    "type-check": "tsc -p tsconfig.prod.json",
+    "lint": "eslint . --ext .ts,.tsx",
+    "lint:css": "stylelint '{pages,components,src}/**/*.{ts,tsx}'",
+    "format": "prettier --write '{pages,components,src}/**/*.{ts,tsx}'"
   },
   "dependencies": {
-    "next": "^9.0.0",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "styled-components": "^4.3.2"
+    "next": "^9.2.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "styled-components": "^5.0.0"
   },
   "devDependencies": {
-    "@strv/eslint-config-react": "^3.0.0",
-    "@strv/eslint-config-typescript": "^2.0.0",
-    "@strv/stylelint-config-styled-components": "^1.1.0",
-    "@types/node": "^12.0.10",
-    "@types/react": "^16.8.22",
-    "@types/react-dom": "^16.0.11",
-    "@types/styled-components": "^4.1.16",
-    "babel-eslint": "^10.0.2",
+    "@strv/eslint-config-react": "^3.0.3",
+    "@strv/eslint-config-typescript": "^2.1.3",
+    "@strv/stylelint-config-styled-components": "^1.1.1",
+    "@types/node": "^13.1.8",
+    "@types/react": "^16.9.19",
+    "@types/react-dom": "^16.9.5",
+    "@types/styled-components": "^4.4.2",
+    "babel-eslint": "^10.0.3",
+    "babel-plugin-root-import": "^6.4.1",
     "babel-plugin-styled-components": "^1.10.6",
-    "eslint": "^5.16.0",
-    "eslint-config-prettier": "^6.0.0",
-    "husky": "^2.5.0",
-    "lint-staged": "^8.2.1",
-    "prettier": "^1.18.2",
-    "stylelint": "^10.1.0",
-    "stylelint-config-prettier": "^5.2.0",
-    "typescript": "^3.5.2"
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-import": "^2.20.0",
+    "husky": "^4.2.0",
+    "lint-staged": "^10.0.2",
+    "prettier": "^1.19.1",
+    "stylelint": "^13.0.0",
+    "stylelint-config-prettier": "^8.0.1",
+    "typescript": "^3.7.5"
   },
   "husky": {
     "hooks": {
@@ -45,22 +47,14 @@
   "lint-staged": {
     "*.{js,ts,tsx}": [
       "eslint --fix",
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ],
     "*.css": [
       "stylelint",
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ],
-    "*.{json,md}": [
-      "prettier --write",
-      "git add"
+    "*.{json,md,html}": [
+      "prettier --write"
     ]
-  },
-  "prettier": {
-    "semi": false,
-    "singleQuote": true,
-    "trailingComma": "es5"
   }
 }
