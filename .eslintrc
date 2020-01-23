@@ -1,0 +1,29 @@
+{
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+
+  "extends": [
+    "@strv/react",
+    "@strv/react/optional",
+    "@strv/typescript",
+    "prettier",
+    "prettier/react"
+  ],
+
+  "rules": {
+    "import/order": [
+      "warn",
+      {
+        "newlines-between": "always",
+        "pathGroups": [
+          {
+            "pattern": "~/**",
+            "group": "external",
+            "position": "after"
+          }
+        ]
+      }
+    ]
+  }
+}
