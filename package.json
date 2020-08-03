@@ -7,12 +7,14 @@
     "build": "next build",
     "start": "next start",
     "type-check": "tsc",
+    "test": "jest",
     "lint": "eslint . --ext .ts,.tsx",
     "lint:css": "stylelint '{pages,components,src}/**/*.{ts,tsx}'",
     "format": "prettier --write '{pages,components,src}/**/*.{ts,tsx}'"
   },
   "dependencies": {
     "next": "^9.5.1",
+    "jest": "^26.2.2",
     "react": "^16.12.0",
     "react-dom": "^16.13.1",
     "rect": "^1.2.1",
@@ -22,6 +24,7 @@
     "@strv/eslint-config-react": "^3.1.2",
     "@strv/eslint-config-typescript": "^2.3.0",
     "@strv/stylelint-config-styled-components": "^1.1.1",
+    "@testing-library/react": "^10.4.7",
     "@types/node": "^14.0.27",
     "@types/react": "^16.9.44",
     "@types/react-dom": "^16.9.8",
