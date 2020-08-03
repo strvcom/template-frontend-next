@@ -6,7 +6,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "type-check": "tsc -p tsconfig.prod.json",
+    "type-check": "tsc",
     "lint": "eslint . --ext .ts,.tsx",
     "lint:css": "stylelint '{pages,components,src}/**/*.{ts,tsx}'",
     "format": "prettier --write '{pages,components,src}/**/*.{ts,tsx}'"
