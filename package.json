@@ -6,6 +6,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
+    "qa": "yarn test && yarn lint && yarn type-check",
     "test": "jest",
     "type-check": "tsc",
     "lint": "eslint src --ext .ts,.tsx",
