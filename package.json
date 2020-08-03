@@ -7,9 +7,9 @@
     "build": "next build",
     "start": "next start",
     "type-check": "tsc",
-    "lint": "eslint . --ext .ts,.tsx",
-    "lint:css": "stylelint '{pages,components,src}/**/*.{ts,tsx}'",
-    "format": "prettier --write '{pages,components,src}/**/*.{ts,tsx}'"
+    "lint": "eslint src --ext .ts,.tsx",
+    "lint:css": "stylelint 'src/**/*.{ts,tsx}'",
+    "format": "prettier --write 'src/**/*.{ts,tsx}'"
   },
   "dependencies": {
     "next": "^9.5.1",
