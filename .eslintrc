@@ -25,5 +25,14 @@
         ]
       }
     ]
-  }
+  },
+
+  "overrides": [
+    {
+      "files": "*.test.*",
+      "rules": {
+        "no-shadow": ["error", { "allow": ["screen"] }]
+      }
+    }
+  ]
 }

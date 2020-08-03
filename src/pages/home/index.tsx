@@ -10,11 +10,12 @@ export const Home: NextPage = () => {
   return (
     <Page>
       <SEO
-        title="Next.js app"
+        title="STRV Next.js app"
         description="change me before going to production"
       />
-
       <Logo />
+
+      <span>Home page</span>
     </Page>
   )
 }
