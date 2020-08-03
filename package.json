@@ -14,18 +14,20 @@
     "format": "prettier --write '{pages,components,src}/**/*.{ts,tsx}'"
   },
   "dependencies": {
-    "next": "^9.5.1",
     "jest": "^26.2.2",
+    "next": "^9.5.1",
     "react": "^16.12.0",
     "react-dom": "^16.13.1",
     "rect": "^1.2.1",
     "styled-components": "^5.1.1"
   },
   "devDependencies": {
+    "@babel/runtime-corejs2": "^7.11.0",
     "@strv/eslint-config-react": "^3.1.2",
     "@strv/eslint-config-typescript": "^2.3.0",
     "@strv/stylelint-config-styled-components": "^1.1.1",
     "@testing-library/react": "^10.4.7",
+    "@types/jest": "^26.0.8",
     "@types/node": "^14.0.27",
     "@types/react": "^16.9.44",
     "@types/react-dom": "^16.9.8",
