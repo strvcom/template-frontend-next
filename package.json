@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "type-check": "tsc",
+    "qa": "yarn test && yarn lint && yarn type-check",
     "test": "jest",
     "lint": "eslint . --ext .ts,.tsx",
     "lint:css": "stylelint '{pages,components,src}/**/*.{ts,tsx}'",
