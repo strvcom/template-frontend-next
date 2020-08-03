@@ -12,31 +12,32 @@
     "format": "prettier --write '{pages,components,src}/**/*.{ts,tsx}'"
   },
   "dependencies": {
-    "next": "^9.2.2",
+    "next": "^9.5.1",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "styled-components": "^5.0.1"
+    "react-dom": "^16.13.1",
+    "rect": "^1.2.1",
+    "styled-components": "^5.1.1"
   },
   "devDependencies": {
-    "@strv/eslint-config-react": "^3.1.1",
-    "@strv/eslint-config-typescript": "^2.2.0",
+    "@strv/eslint-config-react": "^3.1.2",
+    "@strv/eslint-config-typescript": "^2.3.0",
     "@strv/stylelint-config-styled-components": "^1.1.1",
-    "@types/node": "^13.7.2",
-    "@types/react": "^16.9.20",
-    "@types/react-dom": "^16.9.5",
-    "@types/styled-components": "^4.4.3",
-    "babel-eslint": "^10.0.3",
-    "babel-plugin-root-import": "^6.4.1",
-    "babel-plugin-styled-components": "^1.10.7",
-    "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.10.0",
-    "eslint-plugin-import": "^2.20.1",
-    "husky": "^4.2.3",
-    "lint-staged": "^10.0.7",
-    "prettier": "^1.19.1",
-    "stylelint": "^13.2.0",
-    "stylelint-config-prettier": "^8.0.1",
-    "typescript": "^3.7.5"
+    "@types/node": "^14.0.27",
+    "@types/react": "^16.9.44",
+    "@types/react-dom": "^16.9.8",
+    "@types/styled-components": "^5.1.2",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-root-import": "^6.5.0",
+    "babel-plugin-styled-components": "^1.11.1",
+    "eslint": "^7.6.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5",
+    "stylelint": "^13.6.1",
+    "stylelint-config-prettier": "^8.0.2",
+    "typescript": "^3.9.7"
   },
   "husky": {
     "hooks": {
