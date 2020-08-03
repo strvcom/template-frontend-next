@@ -21,10 +21,12 @@
     "styled-components": "^5.2.1"
   },
   "devDependencies": {
+    "@babel/runtime-corejs2": "^7.11.0",
     "@strv/eslint-config-react": "^3.1.2",
     "@strv/eslint-config-typescript": "^2.3.0",
     "@strv/stylelint-config-styled-components": "^1.1.1",
     "@testing-library/react": "^10.4.7",
+    "@types/jest": "^26.0.8",
     "@types/node": "^14.14.14",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
