@@ -13,7 +13,6 @@ export const Home: NextPage = () => {
         title="Next.js app"
         description="change me before going to production"
       />
-
       <Logo />
     </Page>
   )
