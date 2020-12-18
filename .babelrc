@@ -2,13 +2,6 @@
   "presets": ["next/babel"],
   "plugins": [
     [
-      "babel-plugin-root-import",
-      {
-        "rootPathSuffix": "./src",
-        "rootPathPrefix": "~/"
-      }
-    ],
-    [
       "babel-plugin-styled-components",
       {
         "pure": true
