@@ -1,5 +1,6 @@
 import React from 'react'
-import NextApp, { AppProps } from 'next/app'
+import type { AppProps } from 'next/app';
+import NextApp from 'next/app'
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`

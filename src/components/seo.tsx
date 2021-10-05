@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 
-type Props = {
+interface Props {
   title: string
   description: string
 }
