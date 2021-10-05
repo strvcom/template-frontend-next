@@ -23,14 +23,23 @@
           }
         ]
       }
-    ]
+    ],
+
+    // TypeScript
+    "@typescript-eslint/explicit-function-return-type": "off",
   },
 
   "overrides": [
     {
+      "files": "*.page.*",
+      "rules": {
+        "import/no-default-export": "off"
+      }
+    },
+    {
       "files": "*.test.*",
       "rules": {
-        "no-shadow": ["error", { "allow": ["screen"] }]
+        "@typescript-eslint/no-shadow": ["error", { "allow": ["screen"] }]
       }
     }
   ]
