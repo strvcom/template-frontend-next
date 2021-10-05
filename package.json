@@ -6,21 +6,27 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
+    "qa": "yarn test && yarn lint && yarn type-check",
+    "test": "jest",
     "type-check": "tsc",
     "lint": "eslint src --ext .ts,.tsx",
     "lint:css": "stylelint 'src/**/*.{ts,tsx}'",
     "format": "prettier --write 'src/**/*.{ts,tsx}'"
   },
   "dependencies": {
-    "next": "^10.0.3",
+    "jest": "^26.2.2",
+    "next": "^11.1.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "styled-components": "^5.2.1"
   },
   "devDependencies": {
+    "@babel/runtime-corejs2": "^7.11.0",
     "@strv/eslint-config-react": "^3.1.2",
     "@strv/eslint-config-typescript": "^2.3.0",
     "@strv/stylelint-config-styled-components": "^1.1.1",
+    "@testing-library/react": "^10.4.7",
+    "@types/jest": "^26.0.8",
     "@types/node": "^14.14.14",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
@@ -36,6 +42,11 @@
     "stylelint": "^13.8.0",
     "stylelint-config-prettier": "^8.0.2",
     "typescript": "^4.1.3"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "^~/(.*)": "<rootDir>/src/$1"
+    }
   },
   "husky": {
     "hooks": {
