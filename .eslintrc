@@ -7,8 +7,7 @@
     "@strv/react",
     "@strv/react/optional",
     "@strv/typescript",
-    "prettier",
-    "prettier/react"
+    "prettier"
   ],
 
   "rules": {
